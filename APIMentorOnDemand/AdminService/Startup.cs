@@ -39,6 +39,7 @@ namespace AdminService
                 .AddEntityFrameworkStores<AdminDBContext>()
                 .AddDefaultTokenProviders();
             services.AddControllers();
+            services.AddCors();
             services.AddScoped<IAdminRepository, AdminRepository>();
 
             //for authentication

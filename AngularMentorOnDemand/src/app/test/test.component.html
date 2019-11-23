@@ -1,0 +1,26 @@
+<div style="min-height: 750px">
+    <div class="row">
+        <div class="col-md-2" style="padding: 20px;">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <img src="../../assets/mentorProfile.jpg" class="rounded-circle" style="height: 100px; width:100px">
+                </div>
+                <div style="text-align: center; padding-bottom: 20px">
+                    {{_datashare.userName}}
+                </div>
+                <div class="sidebar">
+                    <a routerLink="/studenthome/studentregisteredcourses" routerLinkActive="active">Registered courses</a>
+                    <a routerLink="/studenthome/studentappliedcourses" routerLinkActive="active">Applied courses</a>
+                    <a routerLink="/studenthome/studentconfirmedcourses" routerLinkActive="active">Confirmed courses</a>
+                    <a routerLink="/studenthome/studentcompletedcourses" routerLinkActive="active">Completed courses</a>
+                    <a routerLink="/studenthome/studentrejectedcourses" routerLinkActive="active">Rejected Courses by Mentors</a>
+                    <a routerLink="/studenthome/studentnotifications" routerLinkActive="active">Notifications</a>
+                    <a href="" routerLinkActive="active">Edit profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+<div style="background: #00887a">
+    <div class="container" style="padding-top: 10px; padding-bottom: 10px;">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="d-flex justify-content-center">
+                    <div class="card shadow" style="padding: 50px; height: 100%; width: 500px">
+                        <form #signinForm="ngForm">
+                            <div style="text-align: center">
+                                <h3 style="color: black">Sign In</h3>
+                            </div>
+                            <!-- Log in as -->
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Sign in as</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-id-card-o"
+                                            aria-hidden="true"></i></span>
+                                    </div>
+                                    <!-- <input type="text" class="form-control" placeholder="Enter your email" id="emailSignIn" aria-describedby="emailHelp"> -->
+                                    <select class="form-control" #dropdownselect="ngModel" id="loginAs" name="loginAs" [(ngModel)]="signinData.Role" required>
+                                    <option value=3>Student</option>
+                                    <option value=2>Mentor</option>
+                                    <option value=1>Admin</option>
+                                </select>
+                                </div>
+                                <small class="text-danger" [class.d-none]=" dropdownselect.valid || dropdownselect.untouched">
+                                    Please select one.
+                                </small>
+                            </div>
+                            <!-- email -->
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email Address</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-envelope"
+                                            aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="text" #email="ngModel" name="signinEmail" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" class="form-control" placeholder="Enter your email" id="emailSignIn" [(ngModel)]="signinData.Email" required>
+                                </div>
+                                <small class="text-danger" [class.d-none]=" email.valid || email.untouched">Pleaes enter valid email address!</small>
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                anyone else.</small>
+                            </div>
+                            <!-- password -->
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="password" #password="ngModel" name="signinPassword" class="form-control" id="passwordSignIn" placeholder="Enter your password" id="signinPassword" [(ngModel)]="signinData.Password" required>
+                                </div>
+                                <small class="text-danger" [class.d-none]="password.valid || password.untouched"> Please enter password!</small>
+                                <!-- if email or password is incorrect
+                            <small class="text-danger"> Sorry! Email or Password is incorrect! Please try again.</small> -->
+                            </div>
+                            <div><small class="text-danger">{{message}}</small></div>
+                            <!-- forgot password -->
+                            <div class="mb-3">
+                                <div>
+                                    <a routerLink="" style="padding-left : 20px">Forgot password?</a>
+                                </div>
+                            </div>
+                            <!-- form check -->
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input" name="signinCheck" id="signinCheck" ngModel>
+                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            </div>
+                            <button [disabled]="dropdownselect.invalid || password.invalid || email.invalid" type="button" class="btn btn-outline-primary" (click)="signinMethod()">Log In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="container">
+    <div style="padding-top: 20px">
+        <h4 style="color: #00887a;text-align: center; font-family: fantasy">All Completed Courses</h4>
+        <table *ngIf="tabletoggler" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th></th>
+                    <th>Course Name</th>
+                    <th>Mentor</th>
+                    <th>Duration</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Status</th>
+                    <th>Rate</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let course of completedCourses; let i = index" class="shadow">
+                <tr>
+                    <td>
+                        <div class="card-img d-flex justify-content-center">
+                            <img class="rounded-circle" src="{{course.imageUrl}}" alt="{{course.imageUrl}}" style="height: 70px; width :80px">
+                        </div>
+                    </td>
+                    <td>{{course.name}}</td>
+                    <td>{{course.mentor.name}}</td>
+                    <td>{{course.duration}} Days</td>
+                    <td>{{course.startDate}}</td>
+                    <td>{{course.endDate}}</td>
+                    <td>Completed</td>
+                    <td *ngIf="course.rating==-1">
+                        <select name="slt" id="slt" [(ngModel)]="rate">
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                        </select>
+                        <button style="margin-left: 5px;" class="btn btn-success" (click)="submitRating(course)">Rate</button>
+                    </td>
+                    <td *ngIf="course.rating!=-1">
+                        Rated : {{course.rating}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div *ngIf="!tabletoggler" style="text-align: center; color:#0066ff;padding-top:100px ;"> There are no completed courses!</div>
+    </div>
+</div>

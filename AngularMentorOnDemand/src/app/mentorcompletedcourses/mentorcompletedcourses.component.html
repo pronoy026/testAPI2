@@ -1,0 +1,24 @@
+<div class="container">
+    <div style="padding-top: 20px">
+        <h4 style="color: #00887a;text-align: center; font-family: fantasy">All Completed Courses</h4>
+        <table *ngIf="tabletoggler" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>No</th>
+                    <th>Course Name</th>
+                    <th>Student Name</th>
+                    <th>Completion Status</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let course of completedCourses; let i = index" class="shadow">
+                <tr>
+                    <td>{{i+1}}</td>
+                    <td>{{course.name}}</td>
+                    <td>{{course.student.name}}</td>
+                    <td>{{course.completionStatus}} %</td>
+                </tr>
+            </tbody>
+        </table>
+        <div *ngIf="!tabletoggler" style="text-align: center; color:#0066ff;padding-top:100px ;"> There are no completed courses!</div>
+    </div>
+</div>

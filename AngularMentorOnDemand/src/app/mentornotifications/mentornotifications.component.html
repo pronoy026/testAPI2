@@ -1,0 +1,62 @@
+<div class="container">
+    <div style="padding-top: 20px">
+        <h4 style="color: #00887a;text-align: center; font-family: fantasy">All Notifications</h4>
+
+        <div *ngIf="tabletoggler">
+            <div class="d-flex justify-content-end" style="padding: 20px;">
+                <button (click)="markAllAsRead()" class="btn btn-outline-primary">Mark all as read</button>
+            </div>
+
+            <div *ngFor="let noti of notifications; let i = index">
+                <div *ngIf="noti.type=='request'" class="card shadow" style="padding: 30px;">
+                    <div style="background:#0066ff; border-radius: 10px; padding: 10px;">
+                        <h6 style="color: white;">
+                            {{noti.student.name}} requested for {{noti.courseName}} course.
+                        </h6>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <button class="btn btn-outline-success" (click)="markAsRead(noti)">Mark as read</button>
+                    </div>
+                </div>
+
+                <div *ngIf="noti.type=='register'" class="card shadow" style="padding: 30px;">
+                    <div style="background:#0066ff; border-radius: 10px; padding: 10px;">
+                        <h6 style="color: white;">
+                            {{noti.student.name}} has registered for {{noti.courseName}} course after payment.
+                        </h6>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <button class="btn btn-outline-success" (click)="markAsRead(noti)">Mark as read</button>
+                    </div>
+                </div>
+
+                <div *ngIf="noti.type=='payment'" class="card shadow" style="padding: 30px;">
+                    <div style="background:#0066ff; border-radius: 10px; padding: 10px;">
+                        <h6 style="color: white;">
+                            You got payment rs. {{noti.fee/4}} of total fee rs. {{noti.fee}} as {{noti.student.name}} has completed {{noti.completionStatus}}% of {{noti.courseName}} course.
+                        </h6>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <button class="btn btn-outline-success" (click)="markAsRead(noti)">Mark as read</button>
+                    </div>
+                </div>
+
+                <div *ngIf="noti.type=='complete'" class="card shadow" style="padding: 30px;">
+                    <div style="background:#0066ff; border-radius: 10px; padding: 10px;">
+                        <h6 style="color: white;">
+                            {{noti.student.name}} has successfully completed {{noti.courseName}} course.<br> You got payment rs. {{noti.fee/4}} of total fee rs. {{noti.fee}} as {{noti.student.name}} has completed {{noti.completionStatus}}% of {{noti.courseName}}
+                            course.
+                        </h6>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <button class="btn btn-outline-success" (click)="markAsRead(noti)">Mark as read</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div *ngIf="!tabletoggler" style="text-align: center; color:#0066ff;padding-top:100px ;"> There are no notifications!
+        </div>
+    </div>
+</div>

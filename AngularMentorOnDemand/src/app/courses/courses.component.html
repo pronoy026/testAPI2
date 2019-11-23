@@ -1,0 +1,96 @@
+<div style="padding : 20px; background:cornflowerblue">
+    <div class="card-custom" *ngFor="let course of mentorCourseList">
+        <div class="card" style="border-radius: 25px;">
+            <div class="card-img d-flex justify-content-center" style="padding-top: 10px ">
+                <img class="rounded-circle" src="{{course.imageUrl}}" alt="{{course.name}}" style="height: 150px; width :170px">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title" style="color: darkblue; text-align: center">{{course.name}}</h4>
+                <p class="card-body">
+                    {{course.description}}
+                </p>
+                <div>
+                    <h5 style="color: black; text-align: center"> Duration : {{course.duration}} days</h5>
+                </div>
+                <div style="color: darkblue; text-align: center" class="row">
+                    <div class="col-md-6">Start Date : {{course.startDate}}</div>
+                    <div class="col-md-6">End Date : {{course.endDate}}</div>
+                </div>
+                <div>
+                    <h5 style="color: #00887a; cursor: pointer;; text-align: center; font-family: fantasy"><a data-toggle="modal" data-target="#myModal" (click)="modalDataChange(course)" title="Click to see mentor profile."> Mentor : {{course.mentor.name}} </a></h5>
+                </div>
+                <!-- modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title" style="color: #00887a; font-family:fantasy">
+                                    {{mentorName}}</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div>Years Of Experience : {{expYears}}</div>
+                                <div>Rating : {{mentorRating}} (out of 5)</div>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- modal -->
+
+
+                <div>
+                    <h5 style="color: black; text-align: center">{{course.fee}} /- only</h5>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary" (click)="buttonAction(course)">Enroll</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="row" style="padding : 20px; background:cornflowerblue">
+    <div class="col-md-4 card-custom" *ngFor="let course of courseList">
+        <div class="card" style="border-radius: 25px;">
+            <div class="card-img d-flex justify-content-center" style="padding-top: 10px ">
+                <img class="rounded-circle" src="{{course.imageUrl}}" alt="" style="height: 150px; width :170px">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title" style="color: darkblue; text-align: center">{{course.name}}</h4>
+                <p class="card-body">
+                    {{course.description}}
+                </p>
+                <div>
+                    <h5 style="color: black; text-align: center"> Duration : {{course.duration}}</h5>
+                </div>
+                <div>
+                    <h5 style="color: black; text-align: center"> Mentor : {{course.mentorName}}</h5>
+                </div>
+                <div>
+                    <h5 style="color: black; text-align: center">{{course.fee}} /- only</h5>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary" (click)="selectMentor(course)">Enroll</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

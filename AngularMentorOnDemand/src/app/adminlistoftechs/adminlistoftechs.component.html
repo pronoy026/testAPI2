@@ -1,0 +1,32 @@
+<div class="container">
+    <div style="padding-top: 20px">
+        <h4 style="color: #00887a;text-align: center; font-family: fantasy">All Technologies</h4>
+        <table *ngIf="tabletoggler" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th></th>
+                    <th>Technology Name</th>
+                    <th>Fee</th>
+                    <th>Commission</th>
+                    <th>Duration</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let tech of technologies" class="shadow">
+                <tr>
+                    <td>
+                        <div class="card-img d-flex justify-content-center">
+                            <img class="rounded-circle" src="{{tech.imageUrl}}" alt="{{tech.imageUrl}}" style="height: 70px; width :80px">
+                        </div>
+                    </td>
+                    <td style="color: #0066ff;">{{tech.name}}</td>
+                    <td>{{tech.fee}}</td>
+                    <td>{{tech.commission}}%</td>
+                    <td>{{tech.duration}} Days</td>
+                    <td><button title="Edit Technology" class="btn btn-outline-primary" (click)="editTech(tech)">Edit</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div *ngIf="!tabletoggler" style="text-align: center; color:#0066ff;padding-top:100px ;"> There are no technologies!</div>
+    </div>
+</div>

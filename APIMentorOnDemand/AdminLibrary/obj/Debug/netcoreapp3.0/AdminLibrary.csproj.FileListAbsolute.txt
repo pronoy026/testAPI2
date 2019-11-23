@@ -14,3 +14,11 @@ F:\testAPI\APIMentorOnDemand\AdminLibrary\obj\Debug\netcoreapp3.0\AdminLibrary.A
 F:\testAPI\APIMentorOnDemand\AdminLibrary\obj\Debug\netcoreapp3.0\AdminLibrary.AssemblyInfo.cs
 F:\testAPI\APIMentorOnDemand\AdminLibrary\obj\Debug\netcoreapp3.0\AdminLibrary.dll
 F:\testAPI\APIMentorOnDemand\AdminLibrary\obj\Debug\netcoreapp3.0\AdminLibrary.pdb
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\AdminLibrary\bin\Debug\netcoreapp3.0\AdminLibrary.deps.json
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\AdminLibrary\bin\Debug\netcoreapp3.0\AdminLibrary.dll
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\AdminLibrary\bin\Debug\netcoreapp3.0\AdminLibrary.pdb
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\AdminLibrary\obj\Debug\netcoreapp3.0\AdminLibrary.csprojAssemblyReference.cache
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\AdminLibrary\obj\Debug\netcoreapp3.0\AdminLibrary.AssemblyInfoInputs.cache
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\AdminLibrary\obj\Debug\netcoreapp3.0\AdminLibrary.AssemblyInfo.cs
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\AdminLibrary\obj\Debug\netcoreapp3.0\AdminLibrary.dll
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\AdminLibrary\obj\Debug\netcoreapp3.0\AdminLibrary.pdb

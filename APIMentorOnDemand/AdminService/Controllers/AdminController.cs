@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AdminLibrary.DTOs;
 using AdminLibrary.Models;
 using AdminLibrary.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,7 @@ namespace AdminService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AdminController : ControllerBase
     {
 
@@ -45,6 +47,7 @@ namespace AdminService.Controllers
             return users;
         }
 
+        [AllowAnonymous]
         [HttpGet("getallcourses")]
         public IActionResult GetAllCourses()
         {

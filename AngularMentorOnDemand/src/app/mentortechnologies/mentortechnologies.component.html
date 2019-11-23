@@ -1,0 +1,28 @@
+<div class="container">
+    <div style="padding-top: 20px">
+        <h4 style="color: #00887a;text-align: center; font-family: fantasy">All Available Technologies</h4>
+        <table *ngIf="tabletoggler" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>No</th>
+                    <th>Technology Name</th>
+                    <th>Fee</th>
+                    <th>Commission</th>
+                    <th>Duration</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let tech of techs; let i = index" class="shadow">
+                <tr>
+                    <td>{{i+1}}</td>
+                    <td>{{tech.name}}</td>
+                    <td>{{tech.fee}} /-</td>
+                    <td>{{tech.commission}} %</td>
+                    <td>{{tech.duration}} Days</td>
+                    <td><button class="btn btn-primary" (click)="createCourse(tech)">Create a course</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div *ngIf="!tabletoggler" style="text-align: center; color:#0066ff;padding-top:100px ;"> There are no available technology!</div>
+    </div>
+</div>

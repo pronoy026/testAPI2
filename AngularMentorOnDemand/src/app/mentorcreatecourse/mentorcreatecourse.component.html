@@ -1,0 +1,34 @@
+<div style="text-align: center;font-family:fantasy;padding-top: 20px;">
+    <h4 style="color: blue; font-family: fantasy;">Create a course</h4>
+</div>
+<div style="padding: 100px;" *ngIf="techData!==undefined">
+    <div style="padding-bottom: 10px ; padding-left: 20px; padding-right: 20px;">
+        <div>Course Name : {{techData.name}}</div>
+        <div>Course Fees : {{techData.fee}} /-</div>
+        <div>Course Commission : {{techData.commission}} %</div>
+        <div>Course Duration : {{techData.duration}} Days</div>
+    </div>
+    <form #skillform="ngForm">
+        <div class="form-group">
+            <label class="control-label col-sm-6">Course start date</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" id="startdate" #startdate="ngModel" [class.is-invalid]="startdate.invalid && startdate.touched" (change)="dateChange()" placeholder="Enter start date" name="startdate" [(ngModel)]="createCourseData.StartDate" required>
+            </div>
+            <small class="text-danger col-sm-10" [class.d-none]="startdate.valid || startdate.untouched"> Start date is required!</small>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-6">Course end date</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" id="enddate" [class.is-invalid]="enddate.invalid && enddate.touched" placeholder="Enter end date" #enddate="ngModel" name="enddate" [(ngModel)]="createCourseData.EndDate" readonly="readonly" required>
+            </div>
+            <small class="text-danger col-sm-10" [class.d-none]="enddate.valid || enddate.untouched"> End date is required!</small>
+            <small class="text-danger col-sm-10">{{message}}</small>
+        </div>
+        <div style="margin-left: 15px">
+            <button type="button" [disabled]="skillform.form.invalid" class="btn btn-outline-primary" (click)="createCourse()">Create course</button>
+        </div>
+    </form>
+</div>
+<div *ngIf="techData===undefined" style="padding: 50px; text-align: center;">
+    Please select an available technology and create a course.
+</div>

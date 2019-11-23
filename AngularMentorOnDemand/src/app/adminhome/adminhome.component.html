@@ -1,0 +1,28 @@
+<div>
+    <div class="row">
+        <div class="col-md-2" style="padding: 20px;">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <img src="../../assets/admin.jpg" style="height: 100px; width:160px">
+                </div>
+                <div style="text-align: center; padding-bottom: 20px; color: #0066ff;">
+                    {{_datashare.userName}}
+                </div>
+                <div class="sidebar">
+                    <a routerLink="/adminhome/allstudents" routerLinkActive="active">All Students</a>
+                    <a routerLink="/adminhome/allmentors" routerLinkActive="active">All Mentors</a>
+                    <a routerLink="/adminhome/addtechnology" routerLinkActive="active">Add a Technology</a>
+                    <a routerLink="/adminhome/adminlistoftechs" routerLinkActive="active">Technology List</a>
+                    <a routerLink="/adminhome/adminmentorcourses" routerLinkActive="active">Mentor Created Courses</a>
+                    <a routerLink="/adminhome/adminindividualcourses" routerLinkActive="active">Ongoing courses</a>
+                    <a routerLink="/adminhome/blockedstudents" routerLinkActive="active">Blocked Students</a>
+                    <a routerLink="/adminhome/blockedmentors" routerLinkActive="active">Blocked Mentors</a>
+                    <a routerLink="/adminhome/adminpayment" routerLinkActive="active">Payment History</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.forPadding {
+    padding: 50px;
+}
+
+// li::after {
+//     background-color: #0066ff;
+//     content: "";
+//     width: 0;
+//     height: 3px;
+//     left: 0;
+//     bottom: 0;
+//     transition: width 0.35s ease 0s;
+//     position: absolute;
+// }
+// li:hover::after {
+//     width: 100%;
+// }
+.notification {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.notification:hover {
+    background: transparent;
+}
+
+.notification .badge {
+    position: absolute;
+    top: 1px;
+    left: 25px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,26 @@
+<div class="container">
+    <div style="padding-top: 20px">
+        <h4 style="color: #00887a;text-align: center; font-family: fantasy">All Students</h4>
+        <table *ngIf="tabletoggler" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone No</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let student of allStudents; let i = index" class="shadow">
+                <tr>
+                    <td>{{i+1}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.email}}</td>
+                    <td>{{student.phoneNumber}}</td>
+                    <td><button class="btn btn-outline-danger" (click)="blockStudent(student)">Block</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div *ngIf="!tabletoggler" style="text-align: center; color:#0066ff;padding-top:100px ;"> There is no valid student as a user!</div>
+    </div>
+</div>

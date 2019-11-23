@@ -1,0 +1,96 @@
+<!-- <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top"> -->
+<nav class="navbar navbar-expand-lg bg-dark  navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" routerLink='/home' style="font-family: fantasy; color: #fff"><img src="../assets/mentor.png">&nbsp;MentorOnDemand</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink='/home' style="color: #00887a">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='/courses' style="color: #00887a">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='/aboutus' style="color: #00887a">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink='/contactus' style="color: #00887a">Contact Us</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <!-- <li>
+                <form class="form-inline" action="/action_page.php">
+                    <div class="input-group" style="color: #0066ff">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </li> -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" *ngIf="!_authService.loggedIn()" href="#" data-toggle="dropdown" style="color: #fff">Sign Up
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" routerLink="/studentsignup">Student</a>
+                    <a class="dropdown-item" routerLink="/mentorsignup">Mentor</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="!_authService.loggedIn()" routerLink="/signin" style="color:#fff">&nbsp;&nbsp;Sign In</a>
+            </li>
+
+            <!-- for student  -->
+            <li class="nav-item">
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeStudent' style="color:#00887a; cursor: pointer;" routerLink='/studenthome'>{{_datashare.userEmail}}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeStudent' style="color:#fff; cursor: pointer;" routerLink='/studenthome'>Dashboard</a>
+            </li>
+
+            <!-- for mentor  -->
+            <li class="nav-item">
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeMentor' style="color:#00887a; cursor: pointer;" routerLink='/mentorhome'>{{_datashare.userEmail}}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeMentor' style="color:#fff; cursor: pointer;" routerLink='/mentorhome'>Dashboard</a>
+            </li>
+
+            <!-- for admin  -->
+            <li class="nav-item">
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeAdmin' style="color:#00887a; cursor: pointer;" routerLink='/adminhome'>{{_datashare.userEmail}}</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeAdmin' style="color:#fff; cursor: pointer;" routerLink='/adminhome'>Dashboard</a>
+            </li>
+
+            <!-- logout -->
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="_authService.loggedIn()" style="color:#fff; cursor: pointer;" (click)="_authService.logout()"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;&nbsp;Sign Out</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/search">
+                    <i class="fa fa-search fa-lg" style="color: #0066ff"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="notification" *ngIf='_authService.loggedIn() && _datashare.userTypeMentor' routerLink='/mentorhome/mentornotifications'>
+                    <span><i class="fa fa-bell" style="color:#00887a" aria-hidden="true"></i></span>
+                    <span *ngIf="_datashare.notiMentor>0" class="badge">{{_datashare.notiMentor}}</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="notification" *ngIf='_authService.loggedIn() && _datashare.userTypeStudent' routerLink='/studenthome/studentnotifications'>
+                    <span><i class="fa fa-bell" style="color:#00887a" aria-hidden="true"></i></span>
+                    <span *ngIf="_datashare.notiStudent>0" class="badge">{{_datashare.notiStudent}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

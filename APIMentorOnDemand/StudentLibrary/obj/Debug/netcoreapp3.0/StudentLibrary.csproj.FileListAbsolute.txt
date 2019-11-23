@@ -14,3 +14,11 @@ F:\testAPI\APIMentorOnDemand\StudentLibrary\obj\Debug\netcoreapp3.0\StudentLibra
 F:\testAPI\APIMentorOnDemand\StudentLibrary\obj\Debug\netcoreapp3.0\StudentLibrary.AssemblyInfo.cs
 F:\testAPI\APIMentorOnDemand\StudentLibrary\obj\Debug\netcoreapp3.0\StudentLibrary.dll
 F:\testAPI\APIMentorOnDemand\StudentLibrary\obj\Debug\netcoreapp3.0\StudentLibrary.pdb
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\StudentLibrary\bin\Debug\netcoreapp3.0\StudentLibrary.deps.json
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\StudentLibrary\bin\Debug\netcoreapp3.0\StudentLibrary.dll
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\StudentLibrary\bin\Debug\netcoreapp3.0\StudentLibrary.pdb
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\StudentLibrary\obj\Debug\netcoreapp3.0\StudentLibrary.csprojAssemblyReference.cache
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\StudentLibrary\obj\Debug\netcoreapp3.0\StudentLibrary.AssemblyInfoInputs.cache
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\StudentLibrary\obj\Debug\netcoreapp3.0\StudentLibrary.AssemblyInfo.cs
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\StudentLibrary\obj\Debug\netcoreapp3.0\StudentLibrary.dll
+C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\StudentLibrary\obj\Debug\netcoreapp3.0\StudentLibrary.pdb

@@ -485,19 +485,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\Hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\testAPI\\APIMentorOnDemand\\APIGateway\\APIGateway.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\APIGateway\\APIGateway.csproj",
       "projectName": "APIGateway",
-      "projectPath": "F:\\testAPI\\APIMentorOnDemand\\APIGateway\\APIGateway.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "F:\\testAPI\\APIMentorOnDemand\\APIGateway\\obj\\",
+      "projectPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\APIGateway\\APIGateway.csproj",
+      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\APIGateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

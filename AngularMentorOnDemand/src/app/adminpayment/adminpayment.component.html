@@ -1,0 +1,50 @@
+<div class="container">
+    <div style="padding-top: 20px">
+        <h4 style="color: #00887a;text-align: center; font-family: fantasy">Payment Records</h4>
+        <div *ngIf="tabletoggler">
+            <div *ngFor="let payment of payments; let i = index">
+                <div *ngIf="payment.type=='debit'" style="margin-top: 20px;">
+                    <div class="card shadow" style="padding: 17px;">
+                        <div class="row">
+                            <div class="col-md-2" style="font-family: fantasy;
+                    color: white;border-radius: 7px;padding: 20px;background: darkgoldenrod;
+                     text-align: center;">{{payment.amount}} /-
+                            </div>
+                            <div class="col-md-10">
+                                <div style="text-align: center;">
+                                    <h5 style="font-family: fantasy; color:darkgoldenrod;padding: 7px;">Paid to : {{payment.mentorName}}</h5>
+                                </div>
+                                <div style="text-align: center;">
+                                    Description : Student {{payment.studentName}} completed {{payment.completionStatus}}% of {{payment.courseName}} course of Total fee rs. {{payment.totalFee}}
+                                    <h6 style="color:#0066ff; font-family: fantasy;">Commission for this course : {{payment.courseCommision}}%</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="payment.type=='credit'" style="margin-top: 20px;">
+                    <div class="card shadow" style="padding: 17px;">
+                        <div class="row">
+                            <div class="col-md-2" style="font-family: fantasy;
+                    color: white;border-radius: 7px;padding: 20px;background:#00887a;
+                     text-align: center;">{{payment.amount}} /-
+                            </div>
+                            <div class="col-md-10">
+                                <div style="text-align: center;">
+                                    <h5 style="font-family: fantasy; color:#00887a;padding: 7px;">Amount Received</h5>
+                                </div>
+                                <div style="text-align: center;">
+                                    Description : Student {{payment.studentName}} registered for {{payment.courseName}} course of Total fee rs. {{payment.totalFee}}
+                                    <h6 style="color: #0066ff; font-family: fantasy;">Commission for this course : {{payment.courseCommision}}%</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="!tabletoggler" style="text-align: center; color:#0066ff;padding-top:100px ;"> There are no payment records!
+        </div>
+    </div>

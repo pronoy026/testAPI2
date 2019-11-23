@@ -1,0 +1,27 @@
+<div class="container">
+    <div style="padding-top: 20px">
+        <h4 style="color: #00887a;text-align: center; font-family: fantasy">Payment Records</h4>
+        <div *ngIf="tabletoggler">
+            <div *ngFor="let payment of payments; let i = index">
+                <div *ngIf="payment.type=='debit'" style="margin-top: 20px;">
+                    <div class="card shadow" style="padding: 17px;">
+                        <div class="row">
+                            <div class="col-md-2" style="font-family: fantasy;
+                        color: white;border-radius: 7px;padding: 20px;background: darkgoldenrod;
+                         text-align: center;">{{payment.amount}} /-
+                            </div>
+                            <div class="col-md-10">
+                                <div style="text-align: center;">
+                                    Description : Student {{payment.studentName}} completed {{payment.completionStatus}}% of {{payment.courseName}} course of Total fee rs. {{payment.totalFee}}
+                                </div>
+                                <div style="color: #0066ff; font-family: fantasy;text-align: center;">Commission Deducted : {{payment.courseCommision}}% of total fee.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="!tabletoggler" style="text-align: center; color:#0066ff;padding-top:100px ;"> There are no payment records!
+        </div>
+    </div>

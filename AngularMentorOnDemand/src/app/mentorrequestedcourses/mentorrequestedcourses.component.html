@@ -1,0 +1,27 @@
+<div class="container">
+    <div style="padding-top: 20px">
+        <h4 style="color: #00887a;text-align: center; font-family: fantasy">All Requested Courses</h4>
+        <table *ngIf="tabletoggler" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>No</th>
+                    <th>Course Name</th>
+                    <th>Student Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let course of requestedCourses; let i = index" class="shadow">
+                <tr>
+                    <td>{{i+1}}</td>
+                    <td>{{course.name}}</td>
+                    <td>{{course.student.name}}</td>
+                    <td>
+                        <button class="btn btn-outline-success" (click)="acceptStudent(course)">Accept</button> &nbsp;&nbsp;
+                        <button class="btn btn-outline-danger" (click)="rejectStudent(course)">Reject</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div *ngIf="!tabletoggler" style="text-align: center; color:#0066ff;padding-top:100px ;"> There are no requested courses!</div>
+    </div>
+</div>

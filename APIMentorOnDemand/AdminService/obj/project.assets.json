@@ -8622,19 +8622,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\Hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\testAPI\\APIMentorOnDemand\\AdminService\\AdminService.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AdminService\\AdminService.csproj",
       "projectName": "AdminService",
-      "projectPath": "F:\\testAPI\\APIMentorOnDemand\\AdminService\\AdminService.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "F:\\testAPI\\APIMentorOnDemand\\AdminService\\obj\\",
+      "projectPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AdminService\\AdminService.csproj",
+      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AdminService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8647,8 +8647,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "F:\\testAPI\\APIMentorOnDemand\\AdminLibrary\\AdminLibrary.csproj": {
-              "projectPath": "F:\\testAPI\\APIMentorOnDemand\\AdminLibrary\\AdminLibrary.csproj"
+            "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AdminLibrary\\AdminLibrary.csproj": {
+              "projectPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AdminLibrary\\AdminLibrary.csproj"
             }
           }
         }

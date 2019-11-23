@@ -1,0 +1,61 @@
+<div style="padding: 100px;">
+    <form #techform="ngForm">
+        <div class="form-group">
+            <label class="control-label col-sm-4">Technology Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="techname" #techname="ngModel" [class.is-invalid]="techname.invalid && techname.touched" placeholder="Technology Name" name="technamename" [(ngModel)]="TechData.Name" required>
+            </div>
+            <small class="text-danger col-sm-10" [class.d-none]="techname.valid || techname.untouched"> Technology name is
+                required!
+            </small>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2">Fee</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="fee" [class.is-invalid]="techfee.invalid && techfee.touched" placeholder="Enter fees" #techfee="ngModel" name="fee" [(ngModel)]="TechData.Fee" required>
+            </div>
+            <small class="text-danger col-sm-10" [class.d-none]="techfee.valid || techfee.untouched"> Technology fee is
+                required!
+            </small>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-6" for="email">Commission Percentage</label>
+            <div class="col-sm-10">
+                <input type="number" min=1 max=100 class="form-control" [class.is-invalid]="techcomm.invalid && techcomm.touched" id="comm" #techcomm="ngModel" placeholder="Enter commission percentage" name="comm"  [(ngModel)]="TechData.Commission" required>
+            </div>
+            <small class="text-danger col-sm-10" [class.d-none]="techcomm.valid || techcomm.untouched"> Technology commission percentage is
+                required!
+            </small>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Duration</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" [class.is-invalid]="techdur.invalid && techdur.touched" id="dur" #techdur="ngModel" placeholder="Enter duration in days" name="duration"  [(ngModel)]="TechData.Duration" required>
+            </div>
+            <small class="text-danger col-sm-10" [class.d-none]="techdur.valid || techdur.untouched"> Technology duration is
+                required!
+            </small>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-6" for="email">Image Url</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" [class.is-invalid]="techimg.invalid && techimg.touched" id="img" #techimg="ngModel" placeholder="Enter image url" name="img"  [(ngModel)]="TechData.ImageUrl" required>
+            </div>
+            <small class="text-danger col-sm-10" [class.d-none]="techimg.valid || techimg.untouched"> Technology Image Url is
+                required!
+            </small>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="comment">Description</label>
+            <div class="col-sm-10">
+                <textarea type="text" rows="5" [class.is-invalid]="techdes.invalid && techdes.touched" class="form-control" id="description" #techdes="ngModel" placeholder="Enter description" name="description"  [(ngModel)]="TechData.Description" required></textarea>
+            </div>
+            <small class="text-danger col-sm-10" [class.d-none]="techdes.valid || techdes.untouched"> Technology description is
+                required!
+            </small>
+        </div>
+        <div style="margin-left: 15px">   
+            <button type="button" [disabled]="techform.form.invalid" class="btn btn-outline-primary" (click)="registerTechnology()">Submit</button>
+        </div>
+    </form>
+</div>

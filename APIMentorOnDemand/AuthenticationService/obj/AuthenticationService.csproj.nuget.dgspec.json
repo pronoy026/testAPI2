@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\testAPI\\APIMentorOnDemand\\AuthenticationService\\AuthenticationService.csproj": {}
+    "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationService\\AuthenticationService.csproj": {}
   },
   "projects": {
-    "F:\\testAPI\\APIMentorOnDemand\\AuthenticationLibrary\\AuthenticationLibrary.csproj": {
+    "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationLibrary\\AuthenticationLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\testAPI\\APIMentorOnDemand\\AuthenticationLibrary\\AuthenticationLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationLibrary\\AuthenticationLibrary.csproj",
         "projectName": "AuthenticationLibrary",
-        "projectPath": "F:\\testAPI\\APIMentorOnDemand\\AuthenticationLibrary\\AuthenticationLibrary.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\testAPI\\APIMentorOnDemand\\AuthenticationLibrary\\obj\\",
+        "projectPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationLibrary\\AuthenticationLibrary.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,17 +66,17 @@
         }
       }
     },
-    "F:\\testAPI\\APIMentorOnDemand\\AuthenticationService\\AuthenticationService.csproj": {
+    "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationService\\AuthenticationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\testAPI\\APIMentorOnDemand\\AuthenticationService\\AuthenticationService.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationService\\AuthenticationService.csproj",
         "projectName": "AuthenticationService",
-        "projectPath": "F:\\testAPI\\APIMentorOnDemand\\AuthenticationService\\AuthenticationService.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\testAPI\\APIMentorOnDemand\\AuthenticationService\\obj\\",
+        "projectPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationService\\AuthenticationService.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,8 +89,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "F:\\testAPI\\APIMentorOnDemand\\AuthenticationLibrary\\AuthenticationLibrary.csproj": {
-                "projectPath": "F:\\testAPI\\APIMentorOnDemand\\AuthenticationLibrary\\AuthenticationLibrary.csproj"
+              "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationLibrary\\AuthenticationLibrary.csproj": {
+                "projectPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AuthenticationLibrary\\AuthenticationLibrary.csproj"
               }
             }
           }

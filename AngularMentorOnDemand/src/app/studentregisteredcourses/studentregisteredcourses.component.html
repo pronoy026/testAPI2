@@ -1,0 +1,32 @@
+<div class="container">
+    <div style="padding-top: 20px">
+        <h4 style="color: #00887a;text-align: center; font-family: fantasy">All Registered Courses</h4>
+        <table *ngIf="tabletoggler" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th></th>
+                    <th>Course Name</th>
+                    <th>Mentor</th>
+                    <th>Duration</th>
+                    <th>Completion Status</th>
+                    <th>Overview</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let course of registeredCourses; let i = index" class="shadow">
+                <tr>
+                    <td>
+                        <div class="card-img d-flex justify-content-center">
+                            <img class="rounded-circle" src="{{course.imageUrl}}" alt="{{course.imageUrl}}" style="height: 70px; width :80px">
+                        </div>
+                    </td>
+                    <td>{{course.name}}</td>
+                    <td>{{course.mentor.name}}</td>
+                    <td>{{course.duration}} Days</td>
+                    <td>{{course.completionStatus}} %</td>
+                    <td><button class="btn btn-primary" (click)="courseOverview(course)">Overview</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div *ngIf="!tabletoggler" style="text-align: center; color:#0066ff;padding-top:100px ;"> There are no accepted registered courses!</div>
+    </div>
+</div>
