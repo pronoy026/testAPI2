@@ -1,0 +1,54 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/useraccounts/{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44311
+        }
+      ],
+      "UpstreamPathTemplate": "/authservice/{catchAll}"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/admin/{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44318
+        }
+      ],
+      "UpstreamPathTemplate": "/adminservice/{catchAll}"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/student/{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44311
+        }
+      ],
+      "UpstreamPathTemplate": "/studentservice/{catchAll}"
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/mentor/{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44311
+        }
+      ],
+      "UpstreamPathTemplate": "/mentorservice/{catchAll}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44309"
+  }
+}

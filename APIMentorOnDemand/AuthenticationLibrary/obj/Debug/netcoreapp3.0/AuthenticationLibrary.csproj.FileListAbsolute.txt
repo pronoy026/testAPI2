@@ -1,0 +1,16 @@
+C:\Users\Hp\Desktop\APIMentorOnDemandMicro\APIMentorOnDemand\AuthenticationLibrary\bin\Debug\netcoreapp3.0\AuthenticationLibrary.deps.json
+C:\Users\Hp\Desktop\APIMentorOnDemandMicro\APIMentorOnDemand\AuthenticationLibrary\bin\Debug\netcoreapp3.0\AuthenticationLibrary.dll
+C:\Users\Hp\Desktop\APIMentorOnDemandMicro\APIMentorOnDemand\AuthenticationLibrary\obj\Debug\netcoreapp3.0\AuthenticationLibrary.csprojAssemblyReference.cache
+C:\Users\Hp\Desktop\APIMentorOnDemandMicro\APIMentorOnDemand\AuthenticationLibrary\obj\Debug\netcoreapp3.0\AuthenticationLibrary.AssemblyInfoInputs.cache
+C:\Users\Hp\Desktop\APIMentorOnDemandMicro\APIMentorOnDemand\AuthenticationLibrary\obj\Debug\netcoreapp3.0\AuthenticationLibrary.AssemblyInfo.cs
+C:\Users\Hp\Desktop\APIMentorOnDemandMicro\APIMentorOnDemand\AuthenticationLibrary\bin\Debug\netcoreapp3.0\AuthenticationLibrary.pdb
+C:\Users\Hp\Desktop\APIMentorOnDemandMicro\APIMentorOnDemand\AuthenticationLibrary\obj\Debug\netcoreapp3.0\AuthenticationLibrary.dll
+C:\Users\Hp\Desktop\APIMentorOnDemandMicro\APIMentorOnDemand\AuthenticationLibrary\obj\Debug\netcoreapp3.0\AuthenticationLibrary.pdb
+F:\testAPI\APIMentorOnDemand\AuthenticationLibrary\bin\Debug\netcoreapp3.0\AuthenticationLibrary.deps.json
+F:\testAPI\APIMentorOnDemand\AuthenticationLibrary\bin\Debug\netcoreapp3.0\AuthenticationLibrary.dll
+F:\testAPI\APIMentorOnDemand\AuthenticationLibrary\bin\Debug\netcoreapp3.0\AuthenticationLibrary.pdb
+F:\testAPI\APIMentorOnDemand\AuthenticationLibrary\obj\Debug\netcoreapp3.0\AuthenticationLibrary.csprojAssemblyReference.cache
+F:\testAPI\APIMentorOnDemand\AuthenticationLibrary\obj\Debug\netcoreapp3.0\AuthenticationLibrary.AssemblyInfoInputs.cache
+F:\testAPI\APIMentorOnDemand\AuthenticationLibrary\obj\Debug\netcoreapp3.0\AuthenticationLibrary.AssemblyInfo.cs
+F:\testAPI\APIMentorOnDemand\AuthenticationLibrary\obj\Debug\netcoreapp3.0\AuthenticationLibrary.dll
+F:\testAPI\APIMentorOnDemand\AuthenticationLibrary\obj\Debug\netcoreapp3.0\AuthenticationLibrary.pdb
