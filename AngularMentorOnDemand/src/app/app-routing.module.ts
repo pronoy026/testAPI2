@@ -20,10 +20,8 @@ import { AllmentorsComponent } from './allmentors/allmentors.component';
 import { BlockedstudentsComponent } from './blockedstudents/blockedstudents.component';
 import { BlockedmentorsComponent } from './blockedmentors/blockedmentors.component';
 import { StudentpaymentComponent } from './studentpayment/studentpayment.component';
-import { StudenteditprofileComponent } from './studenteditprofile/studenteditprofile.component';
 import { MentorregisteredcoursesComponent } from './mentorregisteredcourses/mentorregisteredcourses.component';
 import { MentorrequestedcoursesComponent } from './mentorrequestedcourses/mentorrequestedcourses.component';
-import { MentoreditprofileComponent } from './mentoreditprofile/mentoreditprofile.component';
 import { MentorcompletedcoursesComponent } from './mentorcompletedcourses/mentorcompletedcourses.component';
 import { StudentcompletedcoursesComponent } from './studentcompletedcourses/studentcompletedcourses.component';
 import { CourseOverviewComponent } from './course-overview/course-overview.component';
@@ -42,6 +40,10 @@ import { AdminlistoftechsComponent } from './adminlistoftechs/adminlistoftechs.c
 import { AdminmentorcoursesComponent } from './adminmentorcourses/adminmentorcourses.component';
 import { AdminindividualcoursesComponent } from './adminindividualcourses/adminindividualcourses.component';
 import { AdminedittechComponent } from './adminedittech/adminedittech.component';
+import { StudentwelcomeComponent } from './studentwelcome/studentwelcome.component';
+import { MentorprofileComponent } from './mentorprofile/mentorprofile.component';
+import { StudentprofileComponent } from './studentprofile/studentprofile.component';
+import { MentorwelcomeComponent } from './mentorwelcome/mentorwelcome.component';
 
 
 const routes: Routes = [
@@ -91,7 +93,7 @@ const routes: Routes = [
         path: 'mentorrequestedcourses', component: MentorrequestedcoursesComponent
       },
       {
-        path: 'mentoreditprofile', component: MentoreditprofileComponent
+        path: 'mentorprofile', component: MentorprofileComponent
       },
       {
         path : 'mentorcompletedcourses', component : MentorcompletedcoursesComponent
@@ -109,6 +111,9 @@ const routes: Routes = [
       },
       {
         path: 'mentorpayment', component: MentorpaymentComponent
+      },
+      {
+        path: 'mentorwelcome', component : MentorwelcomeComponent
       }
     ],
     canActivate: [AuthGuard]
@@ -125,7 +130,7 @@ const routes: Routes = [
         path: 'studentregisteredcourses', component: StudentregisteredcoursesComponent
       },
       {
-        path: 'studenteditprofile', component: StudenteditprofileComponent
+        path: 'studentprofile', component: StudentprofileComponent
       },
       {
         path : 'studentcompletedcourses', component: StudentcompletedcoursesComponent
@@ -141,6 +146,9 @@ const routes: Routes = [
       },
       {
         path: 'studentnotifications', component: StudentnotificationsComponent
+      },
+      {
+        path : 'studentwelcome', component: StudentwelcomeComponent
       }
 
     ],

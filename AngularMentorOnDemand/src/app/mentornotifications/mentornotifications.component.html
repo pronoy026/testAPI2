@@ -33,7 +33,7 @@
                 <div *ngIf="noti.type=='payment'" class="card shadow" style="padding: 30px;">
                     <div style="background:#0066ff; border-radius: 10px; padding: 10px;">
                         <h6 style="color: white;">
-                            You got payment rs. {{noti.fee/4}} of total fee rs. {{noti.fee}} as {{noti.student.name}} has completed {{noti.completionStatus}}% of {{noti.courseName}} course.
+                            You got payment rs. {{(noti.fee-noti.fee*noti.commission/100)/4}} of total fee rs. {{noti.fee}} as {{noti.student.name}} has completed {{noti.completionStatus}}% of {{noti.courseName}} course. Commission deducted : {{noti.commission}} % of total fee.
                         </h6>
                     </div>
                     <div style="margin-top: 10px;">
@@ -44,8 +44,8 @@
                 <div *ngIf="noti.type=='complete'" class="card shadow" style="padding: 30px;">
                     <div style="background:#0066ff; border-radius: 10px; padding: 10px;">
                         <h6 style="color: white;">
-                            {{noti.student.name}} has successfully completed {{noti.courseName}} course.<br> You got payment rs. {{noti.fee/4}} of total fee rs. {{noti.fee}} as {{noti.student.name}} has completed {{noti.completionStatus}}% of {{noti.courseName}}
-                            course.
+                            {{noti.student.name}} has successfully completed {{noti.courseName}} course.<br> You got payment rs. {{(noti.fee-noti.fee*noti.commission/100)/4}} of total fee rs. {{noti.fee}} as {{noti.student.name}} has completed {{noti.completionStatus}}%
+                            of {{noti.courseName}} course. Commission deducted : {{noti.commission}} % of total fee.
                         </h6>
                     </div>
                     <div style="margin-top: 10px;">

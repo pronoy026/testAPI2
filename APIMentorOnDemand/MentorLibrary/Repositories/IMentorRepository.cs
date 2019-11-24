@@ -14,6 +14,8 @@ namespace MentorLibrary.Repositories
         public IEnumerable<IndividualCourseDto> GetCompletedCourses(string MentorEmail);
         public IEnumerable<IndividualCourseDto> GetRejectedCourses(string MentorEmail);
         public IEnumerable<IndividualCourseDto> GetConfirmedCourses(string MentorEmail);
+        public CourseInfoDto CourseInfo(string email);
+        public UserDto UserInfo(string email);
 
         public IEnumerable<NotificationDto> GetNotifications(string email);
 

@@ -4978,19 +4978,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AdminLibrary\\AdminLibrary.csproj",
+      "projectUniqueName": "F:\\testAPI2\\APIMentorOnDemand\\AdminLibrary\\AdminLibrary.csproj",
       "projectName": "AdminLibrary",
-      "projectPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AdminLibrary\\AdminLibrary.csproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\AdminLibrary\\obj\\",
+      "projectPath": "F:\\testAPI2\\APIMentorOnDemand\\AdminLibrary\\AdminLibrary.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "F:\\testAPI2\\APIMentorOnDemand\\AdminLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

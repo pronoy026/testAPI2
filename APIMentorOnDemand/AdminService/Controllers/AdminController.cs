@@ -55,6 +55,7 @@ namespace AdminService.Controllers
             return Ok(courses);
         }
 
+        [AllowAnonymous]
         [HttpGet("getsearchdata/{searchString}")]
         public IActionResult GetSearchData(string searchString)
         {

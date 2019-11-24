@@ -29,7 +29,7 @@ export class MentorsignupComponent implements OnInit {
             localStorage.setItem('token', res.token)
             localStorage.setItem('email', res.email)
             localStorage.setItem('role', res.role)
-            this._router.navigate(['/mentorhome'])
+            this._router.navigate(['/mentorhome/mentorwelcome'])
           },
           err => console.log(err)
         )

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StudentLibrary.Models;
@@ -11,6 +12,7 @@ namespace StudentService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class StudentController : ControllerBase
     {
 
@@ -149,6 +151,20 @@ namespace StudentService.Controllers
                 return Ok();
             }
             return BadRequest();
+        }
+
+        [HttpGet("courseinfo/{email}")]
+        public IActionResult GetCoursesInfo(string email)
+        {
+            var info = repository.CourseInfo(email);
+            return Ok(info);
+        }
+
+        [HttpGet("studentinfo/{email}")]
+        public IActionResult StudentInfo(string email)
+        {
+            var info = repository.UserInfo(email);
+            return Ok(info);
         }
 
         // PUT: api/Student/5

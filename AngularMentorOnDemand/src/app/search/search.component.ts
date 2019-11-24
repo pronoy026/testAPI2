@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DatashareService } from '../datashare.service';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-search',
@@ -20,7 +21,7 @@ export class SearchComponent implements OnInit {
   searchmsg : string
 
 
-  constructor(public _dataService: DatashareService, private _router : Router) { }
+  constructor(public _dataService: DatashareService, private _router : Router, private auth: AuthService) { }
 
   ngOnInit() {
     // this.getCourses()
@@ -56,11 +57,17 @@ export class SearchComponent implements OnInit {
   }
 
   buttonAction(course) {
-    if (localStorage.getItem('role') != '3') {
-      alert('Sorry! you are not eligible to apply for courses')
+    if (this.auth.loggedIn()) {
+      if (localStorage.getItem('role') != '3') {
+        alert('Sorry! you are not eligible to apply for courses')
+      }
+      else {
+        this.applyCourse(course)
+      }
     }
     else {
-      this.applyCourse(course)
+      alert("Please log in first!")
+      this._router.navigate(['/signin'])
     }
   }
 

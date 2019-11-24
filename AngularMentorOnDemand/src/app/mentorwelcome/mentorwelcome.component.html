@@ -1,0 +1,64 @@
+<div class="container-fluid outerdiv">
+    <div>
+        <h2 class="username">
+            Welcome {{mentorinfo.name}}
+        </h2>
+    </div>
+    <div class="apply d-flex justify-content-center">
+        <button class="btn btn-outline-primary" routerLink='/mentorhome/mentortechnologies'>
+                <i class="fa fa-plus" aria-hidden="true"></i>&nbsp; &nbsp;Find available technologies and create a course for students</button>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-3 option" title="Ongoing Courses">
+            <a routerLink="/mentorhome/mentorregisteredcourses">
+                <div style="text-align:center">
+                    <h5>Registered Courses</h5>
+                </div>
+                <div style="text-align: center;">
+                    <h1>{{coursesinfo.registeredCourses}}</h1>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 option2">
+            <a routerLink="/mentorhome/mentorrequestedcourses">
+                <div style="text-align:center">
+                    <h5>Requested Courses</h5>
+                </div>
+                <div style="text-align: center;">
+                    <h1>{{coursesinfo.appliedCourses}}</h1>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 option4">
+            <a routerLink="/mentorhome/mentorconfirmedcourses">
+                <div style="text-align:center">
+                    <h5>Confirmed Courses</h5>
+                </div>
+                <div style="text-align: center;">
+                    <h1>{{coursesinfo.confirmedCourses}}</h1>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 option5">
+            <a routerLink="/mentorhome/mentorcompletedcourses">
+                <div style="text-align:center">
+                    <h5>Completed Courses</h5>
+                </div>
+                <div style="text-align: center;">
+                    <h1>{{coursesinfo.completedCourses}}</h1>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3 option3">
+            <a routerLink="/mentorhome/mentorprofile">
+                <div class="d-flex justify-content-center">
+                    <i style="color: white;font-size:48px;" class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div style="text-align:center">
+                    <h5>Profile</h5>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>

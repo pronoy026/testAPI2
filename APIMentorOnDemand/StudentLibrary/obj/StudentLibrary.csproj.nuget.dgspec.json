@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\StudentLibrary\\StudentLibrary.csproj": {}
+    "F:\\testAPI2\\APIMentorOnDemand\\StudentLibrary\\StudentLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\StudentLibrary\\StudentLibrary.csproj": {
+    "F:\\testAPI2\\APIMentorOnDemand\\StudentLibrary\\StudentLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\StudentLibrary\\StudentLibrary.csproj",
+        "projectUniqueName": "F:\\testAPI2\\APIMentorOnDemand\\StudentLibrary\\StudentLibrary.csproj",
         "projectName": "StudentLibrary",
-        "projectPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\StudentLibrary\\StudentLibrary.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Desktop\\testAPI2\\APIMentorOnDemand\\StudentLibrary\\obj\\",
+        "projectPath": "F:\\testAPI2\\APIMentorOnDemand\\StudentLibrary\\StudentLibrary.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "F:\\testAPI2\\APIMentorOnDemand\\StudentLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

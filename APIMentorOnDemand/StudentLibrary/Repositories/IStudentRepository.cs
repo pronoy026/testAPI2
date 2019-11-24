@@ -15,6 +15,8 @@ namespace StudentLibrary.Repositories
         public IEnumerable<IndividualCourseDto> GetConfirmedCourses(string StudentEmail);
 
         public IEnumerable<NotificationDto> GetNotifications(string email);
+        public CourseInfoDto CourseInfo(string email);
+        public UserDto UserInfo(string email);
 
         public bool RegisterCourse(Course course);
         public bool CourseCompletionStatusUpdate(Course course);

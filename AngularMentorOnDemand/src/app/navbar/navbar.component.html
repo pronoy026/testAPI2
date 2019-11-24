@@ -48,26 +48,26 @@
 
             <!-- for student  -->
             <li class="nav-item">
-                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeStudent' style="color:#00887a; cursor: pointer;" routerLink='/studenthome'>{{_datashare.userEmail}}</a>
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeStudent' style="color:#00887a; cursor: pointer;" routerLink='/studenthome/studentwelcome'>{{_datashare.userEmail}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeStudent' style="color:#fff; cursor: pointer;" routerLink='/studenthome'>Dashboard</a>
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeStudent' style="color:#fff; cursor: pointer;" routerLink='/studenthome/studentwelcome'>Dashboard</a>
             </li>
 
             <!-- for mentor  -->
             <li class="nav-item">
-                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeMentor' style="color:#00887a; cursor: pointer;" routerLink='/mentorhome'>{{_datashare.userEmail}}</a>
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeMentor' style="color:#00887a; cursor: pointer;" routerLink='/mentorhome/mentorwelcome'>{{_datashare.userEmail}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeMentor' style="color:#fff; cursor: pointer;" routerLink='/mentorhome'>Dashboard</a>
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeMentor' style="color:#fff; cursor: pointer;" routerLink='/mentorhome/mentorwelcome'>Dashboard</a>
             </li>
 
             <!-- for admin  -->
             <li class="nav-item">
-                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeAdmin' style="color:#00887a; cursor: pointer;" routerLink='/adminhome'>{{_datashare.userEmail}}</a>
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeAdmin' style="color:#00887a; cursor: pointer;" routerLink='/adminhome/allstudents'>{{_datashare.userEmail}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeAdmin' style="color:#fff; cursor: pointer;" routerLink='/adminhome'>Dashboard</a>
+                <a class="nav-link" *ngIf='_authService.loggedIn() && _datashare.userTypeAdmin' style="color:#fff; cursor: pointer;" routerLink='/adminhome/allstudents'>Dashboard</a>
             </li>
 
             <!-- logout -->

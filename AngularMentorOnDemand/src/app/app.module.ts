@@ -33,8 +33,6 @@ import { BlockedmentorsComponent } from './blockedmentors/blockedmentors.compone
 import { StudentpaymentComponent } from './studentpayment/studentpayment.component';
 import { MentorregisteredcoursesComponent } from './mentorregisteredcourses/mentorregisteredcourses.component';
 import { MentorrequestedcoursesComponent } from './mentorrequestedcourses/mentorrequestedcourses.component';
-import { MentoreditprofileComponent } from './mentoreditprofile/mentoreditprofile.component';
-import { StudenteditprofileComponent } from './studenteditprofile/studenteditprofile.component';
 import { StudentcompletedcoursesComponent } from './studentcompletedcourses/studentcompletedcourses.component';
 import { MentorcompletedcoursesComponent } from './mentorcompletedcourses/mentorcompletedcourses.component';
 import { CourseOverviewComponent } from './course-overview/course-overview.component';
@@ -54,6 +52,10 @@ import { AdminlistoftechsComponent } from './adminlistoftechs/adminlistoftechs.c
 import { AdminmentorcoursesComponent } from './adminmentorcourses/adminmentorcourses.component';
 import { AdminindividualcoursesComponent } from './adminindividualcourses/adminindividualcourses.component';
 import { AdminedittechComponent } from './adminedittech/adminedittech.component';
+import { StudentwelcomeComponent } from './studentwelcome/studentwelcome.component';
+import { StudentprofileComponent } from './studentprofile/studentprofile.component';
+import { MentorprofileComponent } from './mentorprofile/mentorprofile.component';
+import { MentorwelcomeComponent } from './mentorwelcome/mentorwelcome.component';
 
 @NgModule({
   declarations: [
@@ -81,8 +83,6 @@ import { AdminedittechComponent } from './adminedittech/adminedittech.component'
     StudentpaymentComponent,
     MentorregisteredcoursesComponent,
     MentorrequestedcoursesComponent,
-    MentoreditprofileComponent,
-    StudenteditprofileComponent,
     StudentcompletedcoursesComponent,
     MentorcompletedcoursesComponent,
     CourseOverviewComponent,
@@ -101,6 +101,10 @@ import { AdminedittechComponent } from './adminedittech/adminedittech.component'
     AdminmentorcoursesComponent,
     AdminindividualcoursesComponent,
     AdminedittechComponent,
+    StudentwelcomeComponent,
+    StudentprofileComponent,
+    MentorprofileComponent,
+    MentorwelcomeComponent,
   ],
   imports: [
     BrowserModule,

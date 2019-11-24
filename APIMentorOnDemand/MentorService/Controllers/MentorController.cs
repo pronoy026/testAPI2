@@ -105,6 +105,20 @@ namespace MentorService.Controllers
             return BadRequest();
         }
 
+        [HttpGet("courseinfo/{email}")]
+        public IActionResult GetCoursesInfo(string email)
+        {
+            var info = repository.CourseInfo(email);
+            return Ok(info);
+        }
+
+        [HttpGet("mentorinfo/{email}")]
+        public IActionResult MentorInfo(string email)
+        {
+            var info = repository.UserInfo(email);
+            return Ok(info);
+        }
+
         [HttpGet("deletenotificationbyid/{id}")]
         public IActionResult DeleteNotificationById(int id)
         {

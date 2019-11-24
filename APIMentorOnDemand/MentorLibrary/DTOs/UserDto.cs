@@ -12,6 +12,7 @@ namespace MentorLibrary.DTOs
         public bool IsBlocked { get; set; }
         public string PhoneNumber { get; set; }
         public string Role { get; set; }
+        public string LinkedInUrl { get; set; }
         public int Rating { get; set; } = 5;
         public int Experience { get; set; }
     }

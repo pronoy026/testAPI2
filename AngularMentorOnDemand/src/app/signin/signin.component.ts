@@ -32,15 +32,15 @@ export class SigninComponent implements OnInit {
             localStorage.setItem('email', res.email)
             localStorage.setItem('role', res.role)
             if(res.role == 3) {
-            this._router.navigate(['/studenthome'])
+            this._router.navigate(['/studenthome/studentwelcome'])
             }
             if(res.role == 2)
             {
-              this._router.navigate(['/mentorhome'])
+              this._router.navigate(['/mentorhome/mentorwelcome'])
             }
             if(res.role == 1)
             {
-              this._router.navigate(['/adminhome'])
+              this._router.navigate(['/adminhome/allstudents'])
             }
           },
           err => {

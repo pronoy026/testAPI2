@@ -23,6 +23,7 @@ export class MentornotificationsComponent implements OnInit {
     this.data.getMentorNotifications(email)
       .subscribe(
         res => {
+          console.log(res)
           this.notifications = res
           this.data.notiMentor = this.notifications.length
           if (this.notifications.length == 0) {

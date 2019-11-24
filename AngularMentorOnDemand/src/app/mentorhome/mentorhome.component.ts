@@ -12,6 +12,7 @@ import { DatashareService } from '../datashare.service';
 export class MentorhomeComponent implements OnInit {
 
   mentorNotifications
+  mentorinfo = {}
 
   constructor(private _auth: AuthService, private _router: Router, public _datashare: DatashareService) { }
 
@@ -24,6 +25,7 @@ export class MentorhomeComponent implements OnInit {
           this._router.navigate(['/signin'])
         }
         this.getMentorNotifications()
+        this.getMentorInfo()
   }
   getMentorNotifications() {
     let email = localStorage.getItem('email')
@@ -37,6 +39,19 @@ export class MentorhomeComponent implements OnInit {
          },
          err => console.log(err)
        )
+   }
+   getMentorInfo() {
+    let email = localStorage.getItem('email')
+    this._datashare.getMentorInfo(email)
+        .subscribe(
+          res => {
+            console.log(res)
+              this.mentorinfo = res
+          },
+          err =>{
+            console.log(err)
+          }
+        )
    }
 
 }

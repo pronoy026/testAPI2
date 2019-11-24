@@ -21,8 +21,8 @@ export class AddtechnologyComponent implements OnInit {
     this.data.registerTech(this.TechData)
         .subscribe(
           res => {
-            console.log('tech registered')
-            this.router.navigate(['/adminhome'])
+            alert('Technology has been added successfully!')
+            this.router.navigate(['/adminhome/adminlistoftechs'])
           },
           err => console.log(err)
         )

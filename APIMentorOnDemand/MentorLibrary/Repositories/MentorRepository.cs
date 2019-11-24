@@ -318,6 +318,7 @@ namespace MentorLibrary.Repositories
                             NotiId = n.Id,
                             CourseName = t.Name,
                             Fee = t.Fee,
+                            Commission = t.Commission,
                             Student = (
                                     from u in context.CustomUsers
                                     where (c.StudentEmail == u.Email)
@@ -359,6 +360,55 @@ namespace MentorLibrary.Repositories
         {
             var payments = context.Payments.Where(p => p.MentorEmail == email);
             return payments;
+        }
+
+        public CourseInfoDto CourseInfo(string email)
+        {
+            var Appliedcourses = (from s in context.MentorSkills
+                                  join t in context.Technologies on s.TechId equals t.Id
+                                  join c in context.Courses on s.Id equals c.MentorSkillId
+                                  where (s.MentorEmail == email && c.IsRequested == true)
+                                  select c).ToList().Count;
+            var Registeredcourses = (from s in context.MentorSkills
+                                     join t in context.Technologies on s.TechId equals t.Id
+                                     join c in context.Courses on s.Id equals c.MentorSkillId
+                                     where (s.MentorEmail == email && c.IsRegistered == true)
+                                     select c).ToList().Count;
+            var Confirmedcourses = (from s in context.MentorSkills
+                                    join t in context.Technologies on s.TechId equals t.Id
+                                    join c in context.Courses on s.Id equals c.MentorSkillId
+                                    where (s.MentorEmail == email && c.IsConfirmed == true)
+                                    select c).ToList().Count;
+            var Completedcourses = (from s in context.MentorSkills
+                                    join t in context.Technologies on s.TechId equals t.Id
+                                    join c in context.Courses on s.Id equals c.MentorSkillId
+                                    where (s.MentorEmail == email && c.IsCompleted == true)
+                                    select c).ToList().Count;
+            var result = new CourseInfoDto
+            {
+                AppliedCourses = Appliedcourses,
+                RegisteredCourses = Registeredcourses,
+                ConfirmedCourses = Confirmedcourses,
+                CompletedCourses = Completedcourses
+            };
+            return result;
+        }
+
+        public UserDto UserInfo(string email)
+        {
+            var user = (
+                from u in context.CustomUsers
+                where(u.Email == email)
+                select new UserDto
+                {
+                   Name = u.Name,
+                   Email = u.Email,
+                   Experience = u.Experience,
+                   PhoneNumber = u.PhoneNumber,
+                   LinkedInUrl = u.LinkedInUrl
+
+                }).FirstOrDefault();
+            return user;
         }
     }
 }

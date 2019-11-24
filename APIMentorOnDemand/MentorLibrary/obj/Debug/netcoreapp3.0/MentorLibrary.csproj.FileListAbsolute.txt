@@ -22,3 +22,11 @@ C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\MentorLibrary\obj\Debug\netcoreap
 C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.AssemblyInfo.cs
 C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.dll
 C:\Users\Hp\Desktop\testAPI2\APIMentorOnDemand\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.pdb
+F:\testAPI2\APIMentorOnDemand\MentorLibrary\bin\Debug\netcoreapp3.0\MentorLibrary.deps.json
+F:\testAPI2\APIMentorOnDemand\MentorLibrary\bin\Debug\netcoreapp3.0\MentorLibrary.dll
+F:\testAPI2\APIMentorOnDemand\MentorLibrary\bin\Debug\netcoreapp3.0\MentorLibrary.pdb
+F:\testAPI2\APIMentorOnDemand\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.csprojAssemblyReference.cache
+F:\testAPI2\APIMentorOnDemand\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.AssemblyInfoInputs.cache
+F:\testAPI2\APIMentorOnDemand\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.AssemblyInfo.cs
+F:\testAPI2\APIMentorOnDemand\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.dll
+F:\testAPI2\APIMentorOnDemand\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.pdb

@@ -212,6 +212,39 @@ namespace StudentLibrary.Repositories
             }
         }
 
+        public CourseInfoDto CourseInfo(string email)
+        {
+            var Appliedcourses = (from s in context.MentorSkills
+                                  join t in context.Technologies on s.TechId equals t.Id
+                                  join c in context.Courses on s.Id equals c.MentorSkillId
+                                  where (c.StudentEmail == email && c.IsRequested == true)
+                                  select c).ToList().Count;
+            var Registeredcourses = (from s in context.MentorSkills
+                                  join t in context.Technologies on s.TechId equals t.Id
+                                  join c in context.Courses on s.Id equals c.MentorSkillId
+                                  where (c.StudentEmail == email && c.IsRegistered == true)
+                                  select c).ToList().Count;
+            var Confirmedcourses = (from s in context.MentorSkills
+                                  join t in context.Technologies on s.TechId equals t.Id
+                                  join c in context.Courses on s.Id equals c.MentorSkillId
+                                  where (c.StudentEmail == email && c.IsConfirmed == true)
+                                  select c).ToList().Count;
+            var Completedcourses = (from s in context.MentorSkills
+                                  join t in context.Technologies on s.TechId equals t.Id
+                                  join c in context.Courses on s.Id equals c.MentorSkillId
+                                  where (c.StudentEmail == email && c.IsCompleted == true)
+                                  select c).ToList().Count;
+            var result = new CourseInfoDto
+            {
+                AppliedCourses = Appliedcourses,
+                RegisteredCourses = Registeredcourses,
+                ConfirmedCourses = Confirmedcourses,
+                CompletedCourses = Completedcourses
+            };
+            return result;
+
+        }
+
         public bool DeleteNotificationById(int id)
         {
             var notif = context.Notifications.Where(n => n.Id == id).FirstOrDefault();
@@ -522,6 +555,20 @@ namespace StudentLibrary.Repositories
                 return true;
             }
             return false;
+        }
+
+        public UserDto UserInfo(string email)
+        {
+            var user = (
+                from u in context.CustomUsers
+                where (u.Email == email)
+                select new UserDto
+                {
+                    Email = u.Email,
+                    Name = u.Name,
+                    PhoneNumber = u.PhoneNumber
+                }).FirstOrDefault();
+            return user;
         }
     }
 }

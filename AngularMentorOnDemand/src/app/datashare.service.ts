@@ -234,4 +234,26 @@ export class DatashareService {
     return this.http.get<any>(this._getAdminIndividualCoursesUrl)
   }
 
+  //coursesinfo
+  private _getStudentCoursesInfoUrl = this.apiServer + '/studentservice/courseinfo/'
+  getStudentCoursesInfo(email) {
+    return this.http.get<any>(this._getStudentCoursesInfoUrl+email)
+  }
+
+  private _getMentorCoursesInfoUrl = this.apiServer + '/mentorservice/courseinfo/'
+  getMentorCoursesInfo(email) {
+    return this.http.get<any>(this._getMentorCoursesInfoUrl+email)
+  }
+
+  //userinfo
+  private _getStudentInfoUrl = this.apiServer + '/studentservice/studentinfo/'
+  getStudentInfo(email) {
+    return this.http.get<any>(this._getStudentInfoUrl+email)
+  }
+
+  private _getMentorInfoUrl = this.apiServer + '/mentorservice/mentorinfo/'
+  getMentorInfo(email) {
+    return this.http.get<any>(this._getMentorInfoUrl+email)
+  }
+
 }

@@ -14,6 +14,7 @@ import { DatashareService } from '../datashare.service';
 export class TestComponent implements OnInit {
 
   studentNotifications
+  studentinfo = {}
 
   constructor(private _auth: AuthService, private _router: Router, public _datashare: DatashareService) { }
 
@@ -26,6 +27,7 @@ export class TestComponent implements OnInit {
       this._router.navigate(['/signin'])
     }
     this.getStudentNotifications()
+    this.getStudentInfo()
   }
 
   getStudentNotifications() {
@@ -40,5 +42,18 @@ export class TestComponent implements OnInit {
          },
          err => console.log(err)
        )
+   }
+   getStudentInfo() {
+    let email = localStorage.getItem('email')
+    this._datashare.getStudentInfo(email)
+        .subscribe(
+          res => {
+            console.log(res)
+              this.studentinfo = res
+          },
+          err =>{
+            console.log(err)
+          }
+        )
    }
 }

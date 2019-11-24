@@ -28,7 +28,7 @@ export class StudentsignupComponent implements OnInit {
             localStorage.setItem('token', res.token)
             localStorage.setItem('email', res.email)
             localStorage.setItem('role', res.role)
-            this._router.navigate(['/studenthome'])
+            this._router.navigate(['/studenthome/studentwelcome'])
           },
           err => console.log(err)
       )
